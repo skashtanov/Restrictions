@@ -11,7 +11,7 @@ namespace Restrictions.Regexp
             _pattern = pattern;
         
         public RsRegexp(string pattern) :
-            this(new Regexp(pattern)) {  }
+            this(new Regex(pattern)) {  }
 
         public bool Satisfied(string token) =>
             _pattern.IsMatch(token);
