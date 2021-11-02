@@ -7,10 +7,6 @@
         public RsAll(IEnumerable<IRestriction> restrictions) =>
             _restrictions = restrictions;
 
-        public RsAll(params IRestriction[] restrictions) :
-            this(restrictions.ToList())
-        { }
-
         public bool Satisfied
         {
             get

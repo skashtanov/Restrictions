@@ -1,4 +1,4 @@
-﻿namespace Restrictions.Single.Nullability
+﻿namespace Restrictions.Single
 {
     public sealed class RsNotNull<T> : IRestriction
         where T : class

@@ -1,4 +1,4 @@
-﻿namespace Restrictions.Collections
+﻿namespace Restrictions.Single
 {
     public sealed class RsMapped<TIn, TOut> : IRestriction
     {

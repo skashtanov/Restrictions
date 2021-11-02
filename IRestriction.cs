@@ -7,6 +7,6 @@
 
     public interface IRestriction<T>
     {
-        public bool Satisfied(T value);
+        public bool SatisfiedBy(T value);
     }
 }

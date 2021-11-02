@@ -5,20 +5,15 @@
         private readonly IEnumerable<IRestriction> _restrictions;
         private readonly int _amount;
 
-        public RsSome(int amount, IEnumerable<IRestriction> restrictions)
+        public RsSome(IEnumerable<IRestriction> restrictions, int amount)
         {
             if (amount < 0)
             {
                 throw new ArgumentException($"{nameof(amount)} should be > 0");
             }
-            _amount = amount;
             _restrictions = restrictions;
+            _amount = amount;
         }
-           
-
-        public RsSome(int amount, params IRestriction[] restrictions) :
-            this(amount, restrictions.ToList())
-        { }
 
         public bool Satisfied
         {
