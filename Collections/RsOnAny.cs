@@ -1,6 +1,6 @@
 namespace Restrictions.Collections
 {
-    public sealed class RsOnAll<T> : IRestriction
+    public sealed class RsOnAny<T> : IRestriction
     {
         private readonly IEnumerable<T> _values;
         private readonly IRestriction<T> _restriction;
