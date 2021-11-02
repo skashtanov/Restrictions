@@ -1,8 +1,8 @@
-﻿namespace Restrictions.Regex
+﻿namespace Restrictions.Regexp
 {
-    internal class RsDate
+    public sealed class RsDateRegexp
     {
-        private readonly RsRegex _datePattern = new RsRegex(
+        private readonly RsRegexp _datePattern = new RsRegexp(
             @"(?:(?:31(\/|-|\.)" + 
             @"(?:0?[13578]|1[02]))" + 
             @"\1|(?:(?:29|30)" + 
@@ -19,7 +19,7 @@
             @"(?:(?:1[6-9]|[2-9]\d)?\d{2})"
         );
 
-        public RsDate() { }
+        public RsDateRegexp() { }
 
         public bool Satisfied(string token) =>
             _datePattern.Satisfied(token);

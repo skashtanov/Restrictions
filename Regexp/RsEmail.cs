@@ -1,12 +1,12 @@
-﻿namespace Restrictions.Regex
+﻿namespace Restrictions.Regexp
 {
-    public sealed class RsEmail
+    public sealed class RsEmailRegexp
     {
-        private readonly RsRegex _emailPattern = new RsRegex(
+        private readonly RsRegexp _emailPattern = new RsRegexp(
             @"[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
         );
 
-        public RsEmail() { }
+        public RsEmailRegexp() { }
 
         public bool Satisfied(string token) =>
             _emailPattern.Satisfied(token);
