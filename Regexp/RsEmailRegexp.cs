@@ -8,7 +8,7 @@
 
         public RsEmailRegexp() { }
 
-        public bool Satisfied(string token) =>
+        public bool SatisfiedBy(string token) =>
             _emailPattern.Satisfied(token);
     }
 }

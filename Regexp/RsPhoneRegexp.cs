@@ -8,7 +8,7 @@
 
         public RsPhoneRegexp() { }
 
-        public bool Satisfied(string token) =>
+        public bool SatisfiedBy(string token) =>
             _phonePattern.Satisfied(token);
     }
 }
