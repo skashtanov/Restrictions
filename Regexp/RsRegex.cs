@@ -13,7 +13,7 @@ namespace Restrictions.Regexp
         public RsRegexp(string pattern) :
             this(new Regexp(pattern)) {  }
 
-        public bool Satisfied(string token) =>
+        public bool SatisfiedBy(string token) =>
             _pattern.IsMatch(token);
     }
 }
